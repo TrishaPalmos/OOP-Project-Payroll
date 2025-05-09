@@ -3,9 +3,13 @@ CCS-2A   	                      							                           OOP
 Finals Project Details 
 
 Team Members:
+
 Ghibert Justine M. Flores
+
 Trisha Mae M. Palmos
+
 Louise Inigo N. Ramirez
+
 Hezekiah Timothy T. Limbauan
 
 Title:
