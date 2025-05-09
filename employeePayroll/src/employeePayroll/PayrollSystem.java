@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class PayrollSystem {
-	public PayrollSystem(String name, double salary) {
-		Employee emp = new Employee(name, salary);
+	public PayrollSystem(String name, double salary, String status) {
+		Employee emp = new Employee(name, salary, status);
 		
 		JFrame frame = new JFrame ("Employee Payroll System"); // Title
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -33,6 +33,9 @@ public class PayrollSystem {
 		
 		JLabel nameLabel = new JLabel("Employee: " + name);
 		nameLabel.setFont(new Font("Arial", Font.PLAIN, 18));
+		
+		JLabel statusLabel = new JLabel("Employment Status: " + status);
+		statusLabel.setFont(new Font("Arial", Font.PLAIN, 18));
 		
 		JLabel salaryLabel = new JLabel("Gross Salary: ₱" + salary);
 		salaryLabel.setFont(new Font("Arial", Font.PLAIN, 18));
@@ -70,6 +73,7 @@ public class PayrollSystem {
 		//Adding components to panels
 		panel.add(separator);
 		panel.add(nameLabel);
+		panel.add(statusLabel);
 		panel.add(salaryLabel);
 		panel.add(sssLabel);
 		panel.add(pagibigLabel);
@@ -91,14 +95,15 @@ public class PayrollSystem {
 	public static void main(String [] args) {
 		String name =JOptionPane.showInputDialog("Enter Employee Name: ");
 		String salaryInput = JOptionPane.showInputDialog("Enter Salary (₱):");
+		String statusInput = JOptionPane.showInputDialog("Employment Status:");
 		
-		if (name ==null || salaryInput == null || name.isEmpty() || salaryInput.isEmpty()) {
+		if (name ==null || salaryInput == null  || statusInput == null || name.isEmpty() || salaryInput.isEmpty() || statusInput.isEmpty()) {
 			
 			JOptionPane.showMessageDialog(null, "Invalid Input. Please enter valid details.");
 			return;
 		}
 		
 		double salary = Double.parseDouble(salaryInput);
-		new PayrollSystem(name, salary);
+		new PayrollSystem(name, salary, statusInput);
 	}
 }
