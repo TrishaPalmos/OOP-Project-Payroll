@@ -1,14 +1,11 @@
 B&B Simple Payroll System				 		                                  06/05/25
-CCS-2A   	                      							                        OOP
+CCS-2A   	                      							                           OOP
 Finals Project Details 
 
 Team Members:
 Ghibert Justine M. Flores
-
 Trisha Mae M. Palmos
-
 Louise Inigo N. Ramirez
-
 Hezekiah Timothy T. Limbauan
 
 Title:
