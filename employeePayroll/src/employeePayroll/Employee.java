@@ -2,6 +2,7 @@ package employeePayroll;
 
 public class Employee {
 	String name;
+	String status;
 	double salary;
 	double sssRate = 0.045;
 	double pagibigRate = 0.02;
@@ -11,6 +12,7 @@ public class Employee {
 	public Employee(String name, double salary) {
 		this.name = name;
 		this.salary = salary;
+		this.status = status;
 	}
 
 	public double calculateSSS() {
