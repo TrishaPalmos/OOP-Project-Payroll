@@ -9,7 +9,7 @@ public class Employee {
 	double philhealthRate = 0.04;
 	double taxRate = 0.10;
 	
-	public Employee(String name, double salary) {
+	public Employee(String name, double salary, String status) {
 		this.name = name;
 		this.salary = salary;
 		this.status = status;
